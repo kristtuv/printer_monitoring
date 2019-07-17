@@ -1,0 +1,11 @@
+webhook_url = 'https://mattermost.MYCOMPANY.com'
+webhook_key = 'qwerty1qwert2qwerty3'
+suffix = '.printer.example.com'
+
+dstdirectory = 'mydestination'
+mibpaths = ['mibpath1', 'mibpath2']
+
+printers = ['test.printer.example.com', 'test2.printer.example.com']
+printer_placement = [1, 2]
+
+ignore_list = 'energy saver mode|warming up'
