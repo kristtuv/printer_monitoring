@@ -148,7 +148,8 @@ DESCRIPTION
         python printer_status.py example_printer1.printer.example.com    
     
     
-## Setting up CRON job    
+## Setting up CRON job   
+(Written by Torgeir Lebesbye)   
 `$ export VISUAL=vim; crontab -e` opens the list of CRON jobs the user have on the server in the VIM editor. The following will create a CRON job that runs 23:45 each day:    
     
     TERM=xterm    
