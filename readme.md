@@ -18,40 +18,23 @@ Python scripts that helps you monitor printers on a network.
 ```bash        
 ├── check_online.py                #Ping all printers        
 ├── compiled_mibs                  #Collection of mibs compiled by create_pymibs.py. Pysnmp needs files to be compiled to a .py file.        
-│   ├── DISMAN-EVENT-MIB.py        #Compiled Mib        
-│   ├── HOST-RESOURCES-MIB.py      #Compiled Mib        
-│   ├── IANA-CHARSET-MIB.py        #Compiled Mib        
-│   ├── IANAifType-MIB.py          #Compiled Mib        
-│   ├── IANA-PRINTER-MIB.py        #Compiled Mib        
-│   ├── IF-MIB.py                  #Compiled Mib        
-│   └── Printer-MIB.py             #Compiled Mib        
-├── config.py                      #Settings used in various scripts        
+├── config.py                      #Settings used in various scripts. Only example script provided
 ├── create_pymibs.py               #Used to compiled mibs into .py format used by Pysnmp        
 ├── matterhook                     #Hook for mattermost        
 │   └── incoming.py                #Hook for mattermost        
 ├── monitoring_webhook.py          #Used to check for printer errors and send collected errors to mattermost channel        
 ├── printer_mibs.py                #Function file with general functions used in the scripts        
 ├── printer_monitor.py             #Used to check for errors/alerts        
-├── printer_stats.py               #Used to process page_count.json        
+├── printer_stats.py               #Used to process and update page_count.json.
 ├── printer_status.py              #Used to print general system stats of printers. Location, page_count, ink status etc.        
 ```        
             
 ## Technologies        
 |Package       |Version          | 
 |------------- |---------        |
-|certifi       |2019.6.16        | 
-|chardet       |3.0.4            | 
-|idna          |2.8              | 
-|pip           |19.1.1           | 
-|ply           |3.11             | 
-|pyasn1        |0.4.5            | 
-|pycryptodomex |3.8.2            | 
 |pysmi         |0.3.4            | 
 |pysnmp        |4.4.9            | 
 |requests      |2.22.0           | 
-|setuptools    |28.8.0           | 
-|urllib3       |1.25.3           | 
-|wheel         |0.29.0           | 
 |python        |3.6              | 
 |matterhook    |                 |
 
